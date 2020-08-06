@@ -381,7 +381,7 @@ async def imdb(e):
 
 @register(outgoing=True, pattern=r"^.trt(?: |$)([\s\S]*)")
 async def translateme(trans):
-    """For .trt command, translate the given text using Google Translate."""
+    """For .trt command, translate the given text using Google Translate.**gass**"""
     translator = Translator()
     textx = await trans.get_reply_message()
     message = trans.pattern_match.group(1)
